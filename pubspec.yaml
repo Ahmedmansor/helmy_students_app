@@ -1,0 +1,40 @@
+name: helmy
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  awesome_dialog: ^3.2.1
+  bloc: ^8.1.4
+  dio: ^5.4.3+1
+  dots_indicator: ^3.0.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+  flutter_native_splash: ^2.4.0
+  flutter_svg: ^2.0.10+1
+  fluttertoast: ^8.2.6
+  image_picker: ^1.1.2
+  page_transition: ^2.1.0
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash.jpg 
+  android: true
+  ios: true
+  
+
+
