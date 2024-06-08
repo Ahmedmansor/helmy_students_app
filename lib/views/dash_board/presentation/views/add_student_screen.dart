@@ -37,7 +37,7 @@ class AddStudentScreen extends StatelessWidget {
 
           if (state is ErrorAddStudentState) {
             ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-              content: Text('error ading Student'),
+              content: Text('error Adding Student'),
             ));
           }
         },
