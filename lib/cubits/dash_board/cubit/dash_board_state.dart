@@ -29,5 +29,7 @@ final class ErrorAddStudentState extends DashBoardState {}
 //------------------------------------------------------------------------------
 final class CamereState extends DashBoardState {}
 
+final class GalleryState extends DashBoardState {}
+
 //------------------------------------------------------------------------------
 final class SucessFilterStudentsState extends DashBoardState {}

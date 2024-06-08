@@ -126,6 +126,12 @@ class DashBoardCubit extends Cubit<DashBoardState> {
     file = File(myfile!.path);
   }
 
+  Future pickGallery() async {
+    final myfile = await ImagePicker().pickImage(source: ImageSource.gallery);
+    emit(GalleryState());
+    file = File(myfile!.path);
+  }
+
   //filtered Students
   // List<Students> filteredStudentsList = [];
 

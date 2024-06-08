@@ -44,21 +44,24 @@ class TakeImage extends StatelessWidget {
                                               await dashBoardCubit.pickCamera();
                                               // ignore: use_build_context_synchronously
                                               NavigationUtils.offScreen(
+                                                  // ignore: use_build_context_synchronously
                                                   context);
                                             },
                                             child: const Text("Camera")),
                                       ),
-                                      // Expanded(
-                                      //   child: MaterialButton(
-                                      //       color: Colors.grey,
-                                      //       onPressed: () async {
-                                      //         dashBoardCubit.image =
-                                      //             await picker.pickImage(
-                                      //                 source: ImageSource.camera);
-                                      //         setState(() {});
-                                      //       },
-                                      //       child: const Text("camera")),
-                                      // ),
+                                      Expanded(
+                                        child: MaterialButton(
+                                            color: Colors.grey,
+                                            onPressed: () async {
+                                              await dashBoardCubit
+                                                  .pickGallery();
+                                              // ignore: use_build_context_synchronously
+                                              NavigationUtils.offScreen(
+                                                  // ignore: use_build_context_synchronously
+                                                  context);
+                                            },
+                                            child: const Text("Gallery")),
+                                      ),
                                     ],
                                   ),
                                 );
